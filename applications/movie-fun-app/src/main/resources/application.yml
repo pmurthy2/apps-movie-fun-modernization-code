@@ -18,3 +18,8 @@ s3:
 security:
   basic:
     enabled: false
+
+albums:
+  url: "//album-service/albums"
+movies:
+  url: "//movie-service/movies"

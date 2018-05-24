@@ -10,6 +10,7 @@ import org.superbiz.moviefun.moviesapi.MoviesClient;
 public class ClientConfiguration {
 
     @Bean
+
     public AlbumsClient albumsClient(RestOperations restOperations) {
         return new AlbumsClient("//album-service/albums", restOperations);
     }

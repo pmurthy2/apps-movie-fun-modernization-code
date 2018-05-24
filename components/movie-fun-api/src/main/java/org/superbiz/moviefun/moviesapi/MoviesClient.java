@@ -8,6 +8,7 @@ import java.util.List;
 
 import static org.springframework.http.HttpMethod.GET;
 
+
 public class MoviesClient {
 
     private String moviesUrl;
