@@ -36,6 +36,9 @@ public class CoverCatalog {
 
     @HystrixCommand(fallbackMethod = "buildDefaultCoverBlob")
     Blob getCover(long albumId) throws IOException {
+        try {
+            Thread.sthis.wait(1000);
+        }
         Optional<Blob> maybeCoverBlob = blobStore.get(coverBlobName(albumId));
 
         return maybeCoverBlob.orElseGet(this::buildDefaultCoverBlob);
